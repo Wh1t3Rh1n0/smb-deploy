@@ -28,8 +28,8 @@ for /f "delims=?" %%i in ('type %LIST%') do (
         copy "%UPFILE%" "%%i\"
         if exist "%%i\%UPFILE%" (
             echo "%%i\%UPFILE%" created successfully!
-            echo %%i\%UPFILE% >> "%SUCCESSLOG%"
-            echo %%i >> "%WRITELOG%"
+            echo %%i\%UPFILE%>> "%SUCCESSLOG%"
+            echo %%i>> "%WRITELOG%"
         )
     ) else (
         echo "%%i\%UPFILE%" already exists. Skipping "%%i"

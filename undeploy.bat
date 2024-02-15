@@ -25,16 +25,16 @@ for /f "delims=?" %%i in ('type %LIST%') do (
     echo --- TESTING "%%i" ---
     if not exist "%%i" (
         echo NOT FOUND: %%i
-        echo NOT FOUND: %%i >> "%LOG%"
+        echo NOT FOUND: %%i>> "%LOG%"
     ) else (
         del /f "%%i"
         if not exist "%%i" (
             echo SUCCESSFULLY DELETED: %%i
-            echo SUCCESSFULLY DELETED: %%i >> "%LOG%"
+            echo SUCCESSFULLY DELETED: %%i>> "%LOG%"
         ) else (
             echo [!] COULD NOT DELETE: %%i
-            echo [!] COULD NOT DELETE: %%i >> "%LOG%"
-            echo %%i >> "%NOTDELLOG%"
+            echo [!] COULD NOT DELETE: %%i>> "%LOG%"
+            echo %%i>> "%NOTDELLOG%"
         )
     )
 )

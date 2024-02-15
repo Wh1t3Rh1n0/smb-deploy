@@ -36,3 +36,8 @@ Output is logged to '.\output'.
 - Hint: `output\successful_uploads.txt` is probably the list of files you want to target with this script. 😉
 - Logs successful removals to `output\undeploy_log.txt`
 - Logs unsuccessful removals to `output\unable_to_delete.txt`
+
+
+## Changelog
+
+- **2024-02-15**: Fixed a bug that caused an extra space to be added to lines in the logs.
